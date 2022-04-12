@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "bookshelf REST API, developed with hapi.js framework",
   "main": "index.js",
+  "engines": {
+    "node": ">=8.3.0"
+  },
   "scripts": {
     "dev": "nodemon ./src/server.js"
   },
