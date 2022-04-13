@@ -13,15 +13,7 @@ const init = async () => {
   });
 
   server.route(routes);
-  server.events.on('request', (event, tags) => {
-    if (tags.error) {
-      console.log(`Server error: ${event.error ? event.error.message : 'unknown'}`);
-    }
-    console.log(tags);
-  });
-
   await server.start();
-  console.log(`server berjalan pada ${server.info.uri}`);
 };
 
 init();
